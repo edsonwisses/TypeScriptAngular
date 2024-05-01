@@ -19,3 +19,10 @@ function soma(a, b) {
     console.log(a + b);
 }
 soma(4, 5);
+//soma("a","b")
+// 5 - retorno de função
+function greeting(name) {
+    return "Ol\u00E1 ".concat(name);
+}
+console.log(greeting("Edson"));
+//console.log(greeting(123)) // aqui o compilador avisa que não pode passar um valor numérico

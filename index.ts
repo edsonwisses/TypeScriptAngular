@@ -35,3 +35,13 @@ function soma(a: number, b:number){
 }
 soma(4, 5)
 //soma("a","b")
+
+// 5 - retorno de função
+
+function greeting(name:string):string{
+    //return 5 esse return não seria aceito por retornar um valor númerico
+    return `Olá ${name}`
+}
+
+console.log(greeting("Edson"))
+//console.log(greeting(123)) // aqui o compilador avisa que não pode passar um valor numérico
