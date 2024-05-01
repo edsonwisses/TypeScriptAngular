@@ -1,36 +1,14 @@
-//1 - number
-let x: number = 10
-console.log(x)
-x = 16
-console.log(typeof x)
-const y:number = 15.5884848
-console.log(typeof y)
-console.log(y.toPrecision(3))
+// 1 arrays
+let numbers: number[] = [1, 2, 3]
 
-//2- string
+numbers.push(4)
 
-const firstName: string = "Edson"
-console.log(firstName.toUpperCase())
-let fullName: string
-const lastName:string = "Wisses"
-fullName = firstName+" "+lastName
-console.log(fullName)
-console.log(typeof fullName)
+console.log(numbers[2])
 
-//3 - boolean
-let a: boolean = false
+//numbers = "teste" // não funciona pois o valor não é numérico
 
-console.log(a)
-console.log(typeof a)
+const nomes: string[] = ["Edson", "Fernanda","Isabela"]
 
-a = true
-console.log(a)
+// nomes.push(4) //não funciona pois o valor não é uma string
 
-//4 - inferencie e annotation
-
-let ann: string = "Teste" //aqui o tipo foi definido por annotation
-let inf = "Teste" // aqui o tipo foi definido por inference
-//repare que ele não aceita valores que não sejam string
-ann = 1
-inf = 1
-
+nomes.push("Paulo")
