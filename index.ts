@@ -24,6 +24,13 @@ console.log(a)
 console.log(typeof a)
 
 a = true
-
 console.log(a)
+
+//4 - inferencie e annotation
+
+let ann: string = "Teste" //aqui o tipo foi definido por annotation
+let inf = "Teste" // aqui o tipo foi definido por inference
+//repare que ele não aceita valores que não sejam string
+ann = 1
+inf = 1
 
