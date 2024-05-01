@@ -12,3 +12,10 @@ const nomes: string[] = ["Edson", "Fernanda","Isabela"]
 // nomes.push(4) //não funciona pois o valor não é uma string
 
 nomes.push("Paulo")
+
+//2 - outra sintaxe array
+const nums: Array<number> = [100, 200]
+
+numbers.push(300)
+
+console.log(nums)
