@@ -1,9 +1,16 @@
-const firstName = "Edson"
-const anotherName = 1
-const x = true
+//1 - number
 
-function greeting(name: string){
-    console.log("Olá "+name)
-}
+let x: number = 10
 
-greeting(firstName)
+console.log(x)
+
+x = 16
+
+console.log(typeof x)
+
+const y:number = 15.5884848
+
+console.log(typeof y)
+
+console.log(y.toPrecision(3))
+

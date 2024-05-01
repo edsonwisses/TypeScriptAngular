@@ -1,7 +1,8 @@
-var firstName = "Edson";
-var anotherName = 1;
-var x = true;
-function greeting(name) {
-    console.log("Olá " + name);
-}
-greeting(firstName);
+//1 - number
+var x = 10;
+console.log(x);
+x = 16;
+console.log(typeof x);
+var y = 15.5884848;
+console.log(typeof y);
+console.log(y.toPrecision(3));
