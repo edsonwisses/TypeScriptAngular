@@ -53,3 +53,20 @@ function showNumbers(a, b, c) {
 }
 showNumbers(1, 2, 3);
 showNumbers(4, 5);
+// 9 - validando argumento opcional
+function advancedGreeting(firstName, lastName) {
+    if (lastName !== undefined) {
+        return "Ol\u00E1, ".concat(firstName, " ").concat(lastName, ", tudo bem?");
+    }
+    return "Ol\u00E1 ".concat(firstName, ", tudo bem?");
+}
+console.log(advancedGreeting("Paulo", "Cesar"));
+console.log(advancedGreeting("Isabela"));
+// 10 - union type
+function showBalance(balance) {
+    console.log("O saldo da conta \u00E9 R$".concat(balance));
+}
+showBalance(100);
+showBalance("500");
+// showBalance(true)
+var arr2 = [1, "teste", true];

@@ -78,3 +78,22 @@ function showNumbers(a:number, b:number, c?:number){
 
 showNumbers(1, 2, 3)
 showNumbers(4,5)
+
+// 9 - validando argumento opcional
+function advancedGreeting(firstName: string, lastName?:string){
+    if(lastName!== undefined){
+        return `Olá, ${firstName} ${lastName}, tudo bem?`
+    }
+    return `Olá ${firstName}, tudo bem?`
+} 
+console.log(advancedGreeting("Paulo","Cesar"))
+console.log(advancedGreeting("Isabela"))
+
+// 10 - union type
+function showBalance(balance: string | number){
+    console.log(`O saldo da conta é R$${balance}`)
+}
+showBalance(100)
+showBalance("500")
+// showBalance(true)
+const arr2: Array<number| string| boolean> = [1, "teste", true]
