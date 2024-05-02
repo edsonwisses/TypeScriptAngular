@@ -22,7 +22,14 @@ soma(4, 5);
 //soma("a","b")
 // 5 - retorno de função
 function greeting(name) {
+    //return 5 esse return não seria aceito por retornar um valor númerico
     return "Ol\u00E1 ".concat(name);
 }
 console.log(greeting("Edson"));
 //console.log(greeting(123)) // aqui o compilador avisa que não pode passar um valor numérico
+// 6 - função anonima
+setTimeout(function () {
+    var sallary = 1000;
+    // console.log(parseFloat(sallary))
+    console.log(sallary);
+}, 2000);

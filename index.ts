@@ -45,3 +45,14 @@ function greeting(name:string):string{
 
 console.log(greeting("Edson"))
 //console.log(greeting(123)) // aqui o compilador avisa que não pode passar um valor numérico
+
+// 6 - função anonima
+
+setTimeout(function(){
+    const sallary: number = 1000
+
+    /* console.log(parseFloat(sallary)) //não seria permitido pois o parseFloat só funciona em 
+    strings*/
+    console.log(sallary)
+}, 2000)
+//essa função anonima criada no setTimeout sera executada quando passar 2 segundos
