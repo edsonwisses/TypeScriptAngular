@@ -66,3 +66,15 @@ function passcoordinates(coord: {x: number, y: number}){
 const objcoord = {x:329, y:84.2}
 passcoordinates(objcoord)
 passcoordinates({x:200, y:30})
+
+// 8 - props opcionais 
+function showNumbers(a:number, b:number, c?:number){
+    console.log("A:"+a)
+    console.log("B:"+b)
+    if(c){
+        console.log("C:"+c)
+    }
+}
+
+showNumbers(1, 2, 3)
+showNumbers(4,5)
