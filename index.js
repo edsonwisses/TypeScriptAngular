@@ -30,6 +30,16 @@ console.log(greeting("Edson"));
 // 6 - função anonima
 setTimeout(function () {
     var sallary = 1000;
-    // console.log(parseFloat(sallary))
+    /* console.log(parseFloat(sallary)) //não seria permitido pois o parseFloat só funciona em
+    strings*/
     console.log(sallary);
 }, 2000);
+//essa função anonima criada no setTimeout sera executada quando passar 2 segundos
+//7 - tipos de objeto
+function passcoordinates(coord) {
+    console.log("x coordinates: " + coord.x);
+    console.log("y coordinates: " + coord.y);
+}
+var objcoord = { x: 329, y: 84.2 };
+passcoordinates(objcoord);
+passcoordinates({ x: 200, y: 30 });

@@ -56,3 +56,13 @@ setTimeout(function(){
     console.log(sallary)
 }, 2000)
 //essa função anonima criada no setTimeout sera executada quando passar 2 segundos
+
+//7 - tipos de objeto
+function passcoordinates(coord: {x: number, y: number}){
+    console.log("x coordinates: "+coord.x)
+    console.log("y coordinates: "+coord.y)
+}
+
+const objcoord = {x:329, y:84.2}
+passcoordinates(objcoord)
+passcoordinates({x:200, y:30})
