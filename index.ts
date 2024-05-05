@@ -107,3 +107,46 @@ function showUserRole(role: boolean | string){
 }
 console.log(showUserRole(false))
 console.log(showUserRole("Admin"))
+
+//12 - type alias
+type ID = string|number
+function showId(id: ID){
+    console.log(`O ID é: ${id}`)
+}
+showId(1)
+showId("200")
+
+// 13 - interfaces
+interface Point {
+    x: number
+    y: number
+    z: number
+}
+
+function showCoords(obj : Point){
+    console.log(`x: ${obj.x} y: ${obj.y} z: ${obj.z}`)
+}
+const coordObj:Point = {
+    x: 10,
+    y: 15,
+    z: 20
+}
+showCoords(coordObj)
+
+//14 interface x type alias
+interface Person{
+    name:string
+}
+interface Person {
+    age:number
+}
+const somePerson: Person = {name: "Edson", age: 51}
+console.log(somePerson)
+type personType = {
+    name:string
+}
+
+//type personType = {
+//    age: number
+//}//daria erro falando que o tipo já existe
+

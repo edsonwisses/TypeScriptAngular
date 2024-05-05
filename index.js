@@ -79,3 +79,19 @@ function showUserRole(role) {
 }
 console.log(showUserRole(false));
 console.log(showUserRole("Admin"));
+function showId(id) {
+    console.log("O ID \u00E9: ".concat(id));
+}
+showId(1);
+showId("200");
+function showCoords(obj) {
+    console.log("x: ".concat(obj.x, " y: ").concat(obj.y, " z: ").concat(obj.z));
+}
+var coordObj = {
+    x: 10,
+    y: 15,
+    z: 20
+};
+showCoords(coordObj);
+var somePerson = { name: "Edson", age: 51 };
+console.log(somePerson);
