@@ -114,3 +114,6 @@ console.log(p.innerText);
 var n;
 //n =  1
 n = 1000n; //aqui vai dar erro até alterar o tsconfig.json para 2020
+console.log(n);
+console.log(typeof n);
+console.log(n + 100n);
