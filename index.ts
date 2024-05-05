@@ -150,3 +150,17 @@ type personType = {
 //    age: number
 //}//daria erro falando que o tipo já existe
 
+// 15 - Literal types
+let test: "testando"
+test = "testando"
+console.log(test)
+
+function showDirection(direction:"left" | "right" | "center"){
+    console.log(`A direção é: ${direction}`)
+}
+
+showDirection("left")
+
+//showDirection("top") // a direção top não será aceita pois não foi definida
+
+
