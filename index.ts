@@ -163,4 +163,9 @@ showDirection("left")
 
 //showDirection("top") // a direção top não será aceita pois não foi definida
 
+// 16 - non null assertion operators
+const p = document.getElementById("some-p")
 
+console.log(p!.innerText)
+
+ 
